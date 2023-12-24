@@ -8,12 +8,13 @@
 nav {
   width: 100%;
   background-color: rgb(235, 241, 241);
+  position: fixed;
 }
 
 .container {
   padding: 0px 80px;
   margin: auto;
-  max-width: 1400px;
+  max-width: 1500px;
 }
 
 img {
@@ -27,6 +28,9 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.id .none {
+  display: none;
 }
 .id .map1 {
   font-size: 20px;
@@ -139,10 +143,10 @@ img {
   padding: 30px 0px;
 }
 #index .main .style2 {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
   padding: 50px 0px;
-  align-items: center;
 }
 #index .main .style2 .head1 {
   display: flex;
@@ -244,9 +248,8 @@ span {
   margin: 0px 20px;
 }
 .first .image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
   gap: 20px;
 }
 .first .image .img1 {
@@ -270,12 +273,11 @@ span {
   transform: scale(1.2);
 }
 .first .image .img3 {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto;
   gap: 20px;
 }
 .first .image .img3 div {
-  max-width: 500px;
   overflow: hidden;
 }
 .first .image .img3 div img {
@@ -308,11 +310,11 @@ span {
   color: rgb(138, 135, 135);
 }
 #main1 .file .top2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
   padding: 50px 0px;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 #main1 .file .top2 .flex1 {
   display: flex;
@@ -438,7 +440,7 @@ span {
 #for {
   font-size: 20px;
   padding: 20px;
-  background-color: #ff003c;
+  background-color: hsl(346, 100%, 50%);
   width: 300px;
   color: white;
   margin-top: 40px;
@@ -450,8 +452,215 @@ span {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 789px) {
+.about1 {
+  width: 100%;
+}
+.about1 .keep {
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.about1 .keep .border1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0px;
+}
+.about1 .keep .border1 .texts {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about1 .keep .border1 .texts h3 {
+  font-size: 50px;
+}
+.about1 .keep .border1 .texts p {
+  font-size: 20px;
+  color: #7c7a7a;
+}
+.about1 .keep .border1 .texts button {
+  font-size: 20px;
+  padding: 15px 0px;
+  background-color: #f81f1f;
+  color: white;
+  width: 200px;
+  border: none;
+}
+.about1 .keep .border1 .texts button:hover {
+  background-color: #414141;
+  transition: all 0.5s ease;
+}
+.about1 .keep .border2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0px;
+}
+.about1 .keep .border2 .texts {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about1 .keep .border2 .texts h3 {
+  font-size: 50px;
+}
+.about1 .keep .border2 .texts p {
+  font-size: 20px;
+  color: #7c7a7a;
+}
+.about1 .keep .border2 .texts button {
+  font-size: 20px;
+  padding: 15px 0px;
+  background-color: #f81f1f;
+  color: white;
+  width: 200px;
+  border: none;
+}
+.about1 .keep .border2 .texts button:hover {
+  background-color: #414141;
+  transition: all 0.5s ease;
+}
+
+.files {
+  width: 100%;
+}
+.files .java {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  background-color: #f81f1f;
+  gap: 50px;
+  padding: 50px 0px;
+}
+.files .java .const1 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  max-width: 300px;
+  margin-left: 90px;
+}
+.files .java .const1 i {
+  font-size: 40px;
+  color: white;
+}
+.files .java .const1 h4 {
+  color: white;
+  font-size: 30px;
+}
+.files .java .const1 p {
+  color: #d1cbcb;
+  font-size: 20px;
+}
+.files .java .const2 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  max-width: 300px;
+}
+.files .java .const2 i {
+  font-size: 40px;
+  color: white;
+}
+.files .java .const2 h4 {
+  color: white;
+  font-size: 30px;
+}
+.files .java .const2 p {
+  color: #d1cbcb;
+  font-size: 20px;
+}
+.files .java .const3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 300px;
+  gap: 10px;
+}
+.files .java .const3 i {
+  font-size: 40px;
+  color: white;
+}
+.files .java .const3 h4 {
+  color: white;
+  font-size: 30px;
+}
+.files .java .const3 p {
+  color: #d1cbcb;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1098px) {
+  nav .id .map2 ul {
+    display: none;
+  }
+  nav .id .map3 {
+    display: none;
+  }
+  nav .id .none {
+    display: block;
+  }
+  .body .id1 .blok2 {
+    display: flex;
+    align-items: center;
+  }
+  .body .id1 .blok2 img {
+    width: 700px;
+  }
   #index .main .style2 {
+    grid-template-columns: auto auto;
+  }
+  .first .image {
+    grid-template-columns: auto auto;
+  }
+  #main1 .file .top2 {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+  }
+  .first .image .img3 {
+    grid-template-columns: auto auto;
+  }
+  .files .java {
+    grid-template-columns: auto auto;
+  }
+  .files .java .const3 {
+    margin-left: 90px;
+  }
+}
+@media screen and (max-width: 798px) {
+  .body .id1 .blok2 {
+    display: none;
+  }
+  #index .main .style2 {
+    grid-template-columns: auto;
+  }
+  .first .image {
+    grid-template-columns: auto;
+  }
+  .first .image .img3 {
+    grid-template-columns: auto;
+  }
+  #main1 .file .top2 {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+  .about1 .keep .border1 {
     flex-direction: column;
+  }
+  .about1 .keep .border2 {
+    flex-direction: column;
+  }
+  .files .java {
+    grid-template-columns: auto;
+  }
+  .files .java .const2 {
+    margin-left: 90px;
   }
 }
